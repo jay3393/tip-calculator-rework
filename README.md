@@ -31,7 +31,7 @@ Here's a walkthrough of implemented user stories:
 
 https://user-images.githubusercontent.com/60624849/149399505-1e565439-8549-4ade-bcb3-414c12e85827.mov
 
-GIF created with [Imgur](https://imgur.com)
+GIF created with Quicktime Player
 
 .
 
