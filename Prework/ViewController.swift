@@ -33,6 +33,10 @@ class ViewController: UIViewController {
         let tipPercent = Int(tipSlider.value)
         let tip = bill * (Double(tipPercent) / 100)
         let total = bill + tip
+        
+        let people = Int(splitTipSlider.value)
+        let splitTipAmount = tip / Double(people)
+        splitTipLabel.text = String(format: "$%.2f", splitTipAmount)
         // Update tip amount label
         tipAmountLabel.text = String(format: "$%.2f", tip)
         // Update total amount
@@ -63,10 +67,14 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
+        let people = Int(splitTipSlider.value)
+        let splitTipAmount = tip / Double(people)
+        
         // Update tip amount label
         tipAmountLabel.text = String(format: "$%.2f", tip)
         // Update total amount
         totalLabel.text = String(format: "$%.2f", total)
+        splitTipLabel.text = String(format: "$%.2f", splitTipAmount)
     }
     
 }
